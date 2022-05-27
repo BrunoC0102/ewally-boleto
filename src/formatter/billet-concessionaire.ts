@@ -1,6 +1,6 @@
 export function billetConcessionaireFomatter(billet: string[]) {
 
-  function amount() { 
+  function amount() {    
     return Intl.NumberFormat(
       'pt-BR',
       { 

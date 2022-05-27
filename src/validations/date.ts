@@ -13,6 +13,6 @@ export const calculate = {
     const diffDateInMs = days * (1000 * 60 * 60 * 24);
     const newMillisecondsDate = new Date(baseDate).setMilliseconds(diffDateInMs);
     const newDate = new Date(newMillisecondsDate); 
-    return newDate;
+    return newDate.toISOString().split("T")[0];
   },
 }
